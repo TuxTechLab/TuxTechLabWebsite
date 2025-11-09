@@ -9,10 +9,10 @@
 # NOTES:         This script will auto remove itself, and in case of wanting to run it again, the user must download
 #                it again or do a 'git stash' and revert the changes.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
-# LICENSE:       see in ../LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLab-Template-Repo/blob/master/LICENSE
+# LICENSE:       see in ../LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLabWebsite/blob/master/LICENSE
 # GITHUB:        https://github.com/TuxTechLab/
-# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
-# ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
+# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLabWebsite
+# ISSUES:        https://github.com/TuxTechLab/TuxTechLabWebsite/issues
 # MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
@@ -38,7 +38,7 @@ center() {
 displayTestErrorTexts() {
   echo -e "${RED}X ERROR: The tests failed!${NC}. Please, make sure that you are running this script with its original scaffolding (folder/file) structure without any modification.${NC}"
   echo -e "You should try to 'git stash' your changes and execute this script from the project root again, or clone again the repository (the template) without any changes."
-  echo -e "Remember that your brand new repository should be created from here: ${BOLD}${UPURPLE}https://github.com/TuxTechLab/TuxTechLab-Template-Repo/generate${NC}"
+  echo -e "Remember that your brand new repository should be created from here: ${BOLD}${UPURPLE}https://github.com/TuxTechLab/TuxTechLabWebsite/generate${NC}"
   echo -e "\nThe program will now exit for you to check if this script is executed right when creating your new repository from the link above."
   echo -e "To omit this error and proceed please execute this script again with the flag '${GREEN}--omit-test-check${NC}'"
   echo -e "For more information about the script, use the '${BBLUE}--help${NC}' flag."
@@ -69,8 +69,8 @@ displayHelpTexts() { # (it will manually detect your git data and prompt for the
   echo -e "  bash $0 -u=TuxTechLab --projectType=Github-template --omit-commit${NC}\n"
 
   echo -e "The username, project-name and email are automatically gathered from your git repository and git config."
-  echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPURPLE}https://github.com/TuxTechLab/TuxTechLab-Template-Repo${NC}"
-  echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPURPLE}https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues${NC}"
+  echo -e "Make sure you have ${BBLUE}read the documentation before executing${NC} this script: ${UPURPLE}https://github.com/TuxTechLab/TuxTechLabWebsite${NC}"
+  echo -e "If you have any questions or if any issue is found, please make sure to report it at: ${UPURPLE}https://github.com/TuxTechLab/TuxTechLabWebsite/issues${NC}"
 }
 
 # Function that writes and parses variables to write the new generated README.md file
@@ -153,7 +153,7 @@ By donating, you will help the development of this project, and *you will be fea
 
 ---
 
-$PROJECT_NAME was generated from *[TuxTechLab/TuxTechLab-Template-Repo](https://github.com/TuxTechLab/TuxTechLab-Template-Repo)* 📚
+$PROJECT_NAME was generated from *[TuxTechLab/TuxTechLabWebsite](https://github.com/TuxTechLab/TuxTechLabWebsite
 
 ---
 
@@ -205,6 +205,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
 
 ### Added
 
-* The basic project structure from **[TuxTechLab/TuxTechLab-Template-Repo](https://github.com/TuxTechLab/TuxTechLab-Template-Repo)**.
+* The basic project structure from **[TuxTechLab/TuxTechLabWebsite](https://github.com/TuxTechLab/TuxTechLabWebsite)**.
 EOF"
 }

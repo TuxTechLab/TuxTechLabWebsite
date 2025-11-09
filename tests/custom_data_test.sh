@@ -8,10 +8,10 @@
 # NOTES:         This script is called by the TESTS_RUNNER.sh script. And it unit tests all the custom data modified
 #                by the SETUP_TEMPLATE script.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
-# LICENSE:       see in ../LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLab-Template-Repo/blob/master/LICENSE
+# LICENSE:       see in ../LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLabWebsite/blob/master/LICENSE
 # GITHUB:        https://github.com/TuxTechLab/
-# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
-# ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
+# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLabWebsite
+# ISSUES:        https://github.com/TuxTechLab/TuxTechLabWebsite/issues
 # MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 

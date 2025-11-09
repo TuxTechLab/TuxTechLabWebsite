@@ -8,10 +8,10 @@
 # VERSION:       See in ./../CHANGELOG.md
 # NOTES:         This script does not contain any test; it only calls all the tests one by one.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
-# LICENSE:       see in ../LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLab-Template-Repo/blob/master/LICENSE
+# LICENSE:       see in ../LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLabWebsiteaster/LICENSE
 # GITHUB:        https://github.com/TuxTechLab/
-# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
-# ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
+# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLabWebsite
+# ISSUES:        https://github.com/TuxTechLab/TuxTechLabWebsite/issues
 # MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 

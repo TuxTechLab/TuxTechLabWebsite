@@ -3,7 +3,7 @@
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 # SCRIPT:        SETUP_TEMPLATE.sh
 # USAGE:         bash SETUP_TEMPLATE.sh | ./SETUP_TEMPLATE.sh
-# PURPOSE:       Shell script that setups the @TuxTechLab/TuxTechLab-Template-Repo GitHub project template.
+# PURPOSE:       Shell script that setups the @TuxTechLab/TuxTechLabWebsite GitHub project template.
 #                It detects the user's GitHub username, email and project name,
 #                and then prompts for the type of project that it is. All the data can be manually specified using
 #                the script optional arguments. For more information, please execute the script with the '--help' flag.
@@ -15,10 +15,10 @@
 # NOTES:         This script will auto remove itself, and if you want to rerun it, the user must download
 #                it again or do a 'git stash' and revert the changes.
 # BASH_VERSION:  5.1.4(1)-release (x86_64-pc-linux-gnu)
-# LICENSE:       see in LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLab-Template-Repo/blob/master/LICENSE
+# LICENSE:       see in LICENSE (project root) or https://github.com/TuxTechLab/TuxTechLabWebsite/blob/master/LICENSE
 # GITHUB:        https://github.com/TuxTechLab/
-# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
-# ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
+# REPOSITORY:    https://github.com/TuxTechLab/TuxTechLabWebsite
+# ISSUES:        https://github.com/TuxTechLab/TuxTechLabWebsite/issues
 # MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
@@ -79,7 +79,7 @@ displayHelpTexts() {
     echo -e "\n  ${CYAN}Mixed Formats:${NC}"
     echo -e "  $0 -u myuser --email=me@example.com -p=myproject --type website"
     
-    echo -e "\n${BOLD}Note:${NC} For more information, visit ${UPURPLE}https://github.com/TuxTechLab/TuxTechLab-Template-Repo${NC}"
+    echo -e "\n${BOLD}Note:${NC} For more information, visit ${UPURPLE}https://github.com/TuxTechLab/TuxTechLabWebsite${NC}"
     
     exit 0
 }
@@ -181,8 +181,8 @@ parse_arguments() {
 # Parse the command line arguments
 parse_arguments "$@"
 
-echo -e "Thanks for using ${GREEN}@TuxTechLab/TuxTechLab-Template-Repo${NC}"
-echo -e "Read all the documentation carefully before you continue executing this script: ${UPURPLE}https://github.com/TuxTechLab/TuxTechLab-Template-Repo${NC}\n"
+echo -e "Thanks for using ${GREEN}@TuxTechLab/TuxTechLabWebsite${NC}"
+echo -e "Read all the documentation carefully before you continue executing this script: ${UPURPLE}https://github.com/TuxTechLab/TuxTechLabWebsite${NC}\n"
 
 bash tests/TESTS_RUNNER.sh >/dev/null 2>&1 # PERFORM the TESTS
 
@@ -226,7 +226,7 @@ y | Y)
     git add CHANGELOG.md README.md .gitignore .github SETUP_TEMPLATE.sh LICENSE bin tests
     git -c color.status=always status | less -REX
     echo -e "Committing the changes for you :)\n"
-    git commit -m "📝 Set up '@TuxTechLab/TuxTechLab-Template-Repo' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
+    git commit -m "📝 Set up '@TuxTechLab/TuxTechLabWebsite' template: Personalized files by executing the SETUP_TEMPLATE.sh script.🚀"
     echo -e "\nRemember to review every file and customize it as you like.\nYou are ready to start your brand new awesome project🚀🚀."
   else
     echo -e "\n${YELLOW}Changes have been made but not committed (--omit-commit was specified).${NC}"

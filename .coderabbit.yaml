@@ -1,0 +1,257 @@
+# CodeRabbit Configuration
+# Configuration for code quality, security, and linting
+
+# Linting configuration
+lint:
+  # Dockerfile linting
+  dockerfile:
+    enabled: true
+    config:
+      rules:
+        hadolint:
+          DL3008: warning  # Pin versions in apt-get install
+          DL3013: warning  # Pin versions in pip install
+          DL4000: error    # MAINTAINER is deprecated
+          DL3003: error    # Use WORKDIR instead of cd
+          DL3007: warning  # Using latest is discouraged
+          DL3015: error    # Avoid additional packages
+          DL3018: warning  # Pin versions in apk add
+          DL3020: error    # Use COPY instead of ADD
+          DL3045: warning  # COPY with more than 2 arguments
+          DL3059: error    # Multiple consecutive RUN commands
+
+  # HTML linting (using HTMLHint)
+  html:
+    enabled: true
+    config:
+      rules:
+        'tagname-lowercase': true
+        'attr-lowercase': true
+        'attr-value-double-quotes': true
+        'spec-char-escape': true
+        'id-unique': true
+        'src-not-empty': true
+        'alt-require': true
+        'title-require': true
+        'doctype-first': true
+        'id-class-value': 'dash'
+        'inline-style-disabled': true
+        'inline-script-disabled': true
+        'space-tab-mixed-disabled': 'space'
+        'id-class-ad-disabled': true
+        'href-abs-or-rel': false
+        'attr-unsafe-chars': true
+
+  # CSS/SCSS linting (using Stylelint)
+  css:
+    enabled: true
+    config:
+      extends: 'stylelint-config-standard'
+      rules:
+        'at-rule-no-unknown': [true, {
+          ignoreAtRules: ['tailwind', 'apply', 'layer', 'variants', 'responsive', 'screen']
+        }]
+        'declaration-block-trailing-semicolon': 'always'
+        'no-descending-specificity': null
+        'selector-class-pattern': '^[a-z][a-zA-Z0-9]+$'
+        'selector-pseudo-class-no-unknown': [true, {
+          ignorePseudoClasses: ['global']
+        }]
+        'property-no-unknown': [true, {
+          ignoreProperties: ['composes']
+        }]
+
+  # Shell script linting (using ShellCheck)
+  shell:
+    enabled: true
+    config:
+      exclude:
+        - SC1090  # Can't follow non-constant source
+        - SC1091  # Not following
+        - SC2155  # Declare and assign separately
+      warning:
+        - SC2086  # Double quote to prevent globbing
+        - SC2006  # Use $(...) notation
+        - SC2016  # Expressions don't expand in single quotes
+      error:
+        - SC2181  # Check exit code directly
+        - SC2317  # Command appears to be unreachable
+
+  # Markdown linting
+  markdown:
+    enabled: true
+    config:
+      MD013:  # Line length
+        line_length: 120
+        code_blocks: false
+        tables: false
+      MD033:  # Inline HTML
+        allowed_elements: ['br', 'img', 'a', 'div', 'h1', 'h2', 'h3', 'p', 'b', 'i', 'u']
+      MD041:  # First line should be a top-level heading
+        level: 1
+      MD047:  # Files should end with a single newline
+        require: true
+
+  # Python linting (using Pylint)
+  python:
+    enabled: true
+    config:
+      master:
+        disable: 'C0114,C0115,C0116'  # Disable docstring requirements
+      messages_control:
+        disable:
+          - 'C0103'  # Invalid name
+          - 'R0903'  # Too few public methods
+          - 'R0913'  # Too many arguments
+      basic:
+        max-line-length: 120
+      format:
+        max-line-length: 120
+      design:
+        max-args: 6
+        max-locals: 15
+        max-returns: 6
+        max-statements: 50
+      similarity:
+        min-similarity-lines: 4
+
+  # JavaScript/TypeScript linting (ESLint)
+  javascript:
+    enabled: true
+    config:
+      extends: 
+        - 'eslint:recommended'
+        - 'plugin:@typescript-eslint/recommended'
+        - 'plugin:react/recommended'
+        - 'plugin:react-hooks/recommended'
+      parser: '@typescript-eslint/parser'
+      parserOptions:
+        ecmaVersion: 2021,
+        sourceType: 'module',
+        ecmaFeatures:
+          jsx: true
+      settings:
+        react:
+          version: 'detect'
+      rules:
+        # Core rules
+        'no-console': 'warn',
+        'no-debugger': 'error',
+        'no-unused-vars': ['warn', { 'argsIgnorePattern': '^_', 'varsIgnorePattern': '^_' }],
+        'prefer-const': 'warn',
+        'eqeqeq': ['error', 'always'],
+        'no-eval': 'error',
+        'no-var': 'error',
+        'prefer-template': 'warn',
+        'template-curly-spacing': 'error',
+        'no-duplicate-imports': 'error',
+        'no-useless-constructor': 'warn',
+        'no-useless-rename': 'warn',
+        'rest-spread-spacing': 'error',
+        'semi': ['error', 'always'],
+        'quotes': ['error', 'single', { 'avoidEscape': true }],
+        'indent': ['error', 2, { 'SwitchCase': 1 }],
+        'comma-dangle': ['error', 'always-multiline'],
+        'object-curly-spacing': ['error', 'always'],
+        'array-bracket-spacing': ['error', 'never'],
+        'keyword-spacing': 'error',
+        'space-before-blocks': 'error',
+        'space-before-function-paren': ['error', 'never'],
+        'space-in-parens': ['error', 'never'],
+        'space-infix-ops': 'error',
+        'space-unary-ops': 'error',
+        'spaced-comment': 'warn',
+        'arrow-spacing': 'error',
+        'no-implied-eval': 'error',
+        'no-multi-spaces': 'error',
+        'no-multi-str': 'error',
+        'no-new-wrappers': 'error',
+        'no-self-compare': 'error',
+        'no-sequences': 'error',
+        'no-throw-literal': 'error',
+        'no-unused-expressions': 'warn',
+        'no-useless-call': 'error',
+        'no-void': 'error',
+        'prefer-promise-reject-errors': 'error',
+        'radix': 'error',
+        'yoda': 'error',
+        
+        # TypeScript specific
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-explicit-any': 'warn',
+        '@typescript-eslint/no-unused-vars': ['warn', { 'argsIgnorePattern': '^_', 'varsIgnorePattern': '^_' }],
+        
+        # React specific
+        'react/react-in-jsx-scope': 'off',
+        'react/prop-types': 'off',
+        'react/jsx-uses-react': 'off',
+        'react/jsx-uses-vars': 'error',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn'
+
+review:
+  enabled: true
+  auto_submit: true
+  update_comment: true
+
+comments:
+  show_code_suggestions: true
+  show_security_issues: true
+  show_performance_improvements: true
+
+# Focus on source and test files only
+files:
+  include:
+    - "src/**/*"
+    - "tests/**/*"
+    - "*.{js,ts,json,md}"
+  
+  # Exclude common directories and files
+  exclude:
+    - "**/node_modules"
+    - "**/dist"
+    - "**/build"
+    - "**/*.min.*"
+    - "**/.git"
+    - "**/package-lock.json"
+    - "**/yarn.lock"
+    - "**/__pycache__/**"
+
+# Security scanning
+security:
+  enabled: true
+  dependency_check: true  # Checks package.json for known vulnerabilities
+  secret_scanning: true  # Looks for exposed secrets
+
+# Basic PR quality checks
+pr_size:
+  large_threshold: 500   # Warn if PR > 500 lines
+  xlarge_threshold: 1000 # Block if PR > 1000 lines
+
+# Documentation checks
+documentation:
+  require_updates: true
+  check_readme: true
+
+# Simple custom rules
+custom_rules:
+  - name: "Avoid console.log in production"
+    pattern: "console\\.(log|warn|error|info)"
+    message: "Consider using a proper logging library in production"
+    level: "warning"
+
+# Ignore common directories
+global_ignore:
+  - "**/node_modules"
+  - "**/dist"
+  - "**/build"
+  - "**/.git"
+  - "**/*.min.*"
+  - "**/__pycache__/**"
+
+# Basic PR requirements
+pr_description:
+  required: true
+  min_length: 200
+  require_issue_reference: true

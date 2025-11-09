@@ -153,8 +153,8 @@ TuxTechLabWebsite/
 
 ## 🍰 **Supporters and donators**
 
-<a href="https://github.com/TuxTechLab/TuxTechLab-Template-Repo/generate">
-  <img alt="@TuxTechLab/TuxTechLab-Template-Repo's brand logo without text" align="right" src="https://i.imgur.com/3qK1sie.png" width="18%" />
+<a href="https://github.com/TuxTechLab/TuxTechLabWebsite/generate">
+  <img alt="@TuxTechLab/TuxTechLabWebsite's brand logo without text" align="right" src="https://i.imgur.com/3qK1sie.png" width="18%" />
 </a>
 
 We are currently looking for new donators to help and maintain this project! ❤️

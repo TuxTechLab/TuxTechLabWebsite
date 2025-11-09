@@ -1,54 +1,58 @@
 ---
-name: "📚 Documentation or README.md issue report"
-about: "Report an issue in the project's documentation or README.md file."
-title: ""
-labels: "Documentation"
-assignees: Tux
-
----
-# **📚 Documentation Issue Report**
-
-## **Describe the bug**
-<!-- A clear and concise description of what the bug is. -->
-
-*
-
+name: "📝 Documentation Issue"
+about: "Report an issue related to documentation"
+title: "[Docs] "
+labels: 
+  - "Type: Documentation"
+  - "Needs Triage"
+assignees: 
+  - Tux
 ---
 
-### **To Reproduce**
+# 📝 Documentation Issue
 
-<!-- Steps to reproduce the error:
-(e.g.:)
-1. Use x argument / navigate to
-2. Fill this information
-3. Go to...
-4. See error -->
+## 🎯 Description
+<!-- A clear and concise description of the documentation issue. -->
 
-<!-- Write the steps here (add or remove as many steps as needed)-->
+## 📍 Location
+<!-- Where is this documentation issue located? -->
+- **Page/File**: 
+- **Section**: 
+- **URL** (if applicable): 
 
-1.
-2.
-3.
-4.
+## 🔍 Current Behavior
+<!-- Describe what is currently documented that is incorrect or unclear. -->
 
----
+## ✅ Expected Behavior
+<!-- Describe what you expected to see in the documentation. -->
 
-### **Media prove**
-<!-- If applicable, add screenshots or videos to help explain your problem. -->
+## 📸 Screenshots
+<!-- Add screenshots to help explain the issue if applicable. -->
+<!-- You can drag and drop images here or provide links to external resources. -->
 
----
+## 📚 Suggested Changes
+<!-- If you have suggestions for how to fix the documentation, please describe them here. -->
 
-## **Describe the solution you'd like**
-<!-- A clear and concise description of what you want to happen. -->
+## 🔗 Related Issues/Documents
+<!-- List any related issues or documents that might help resolve this. -->
 
-*
+## 🌐 Environment
+- **Documentation Version**: <!-- e.g., 1.0.0, main branch -->
+- **Browser**: <!-- e.g., Chrome 115, Firefox 114 -->
+- **Device**: <!-- e.g., Desktop, Mobile -->
+- **OS**: <!-- e.g., Windows 11, macOS 13, Ubuntu 22.04 -->
 
----
+## 📋 Additional Context
+<!-- Add any other context about the documentation issue here. -->
 
-### **Additional context**
-<!-- Add any other context or additional information about the problem here.-->
-
-*
+## 🏷️ Labels
+<!-- Add any relevant labels -->
+- [ ] Typo
+- [ ] Outdated Information
+- [ ] Missing Information
+- [ ] Incorrect Example
+- [ ] Needs Restructuring
+- [ ] Translation Issue
 
 <!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
 

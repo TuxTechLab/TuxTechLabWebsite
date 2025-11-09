@@ -6,6 +6,10 @@
 2. Read the instructions carefully in that template and submit the issue asking for support
 or any question.
 
+## Change Logs
+
+See the [change logs](./CHANGELOG.md) for more information about the changes made to the project.
+
 ## Bug reports
 
-See the [contributing guidelines](CONTRIBUTING.md) for sharing bug reports and read our [code of conduct](CODE_OF_CONDUCT.md).
+See the [contributing guidelines](./CONTRIBUTING.md) for sharing bug reports and read our [code of conduct](./CODE_OF_CONDUCT.md).

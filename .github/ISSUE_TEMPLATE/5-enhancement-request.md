@@ -1,45 +1,77 @@
 ---
-name: "🚀➕ Enhancement Request"
-about: "Suggest an enhancement for this project. Improve an existing feature"
-title: ""
-labels: "Type: Enhancement"
-assignees: Tux
-
+name: "🚀 Enhancement Request"
+about: Suggest an enhancement to improve an existing feature or functionality
+title: "[ENH] "
+labels: "Type: Enhancement", "Needs Triage"
+assignees: "@TuxTechLab/team-core"
 ---
 
-# **🚀 Enhancement Request**
+# 🚀 Enhancement Request
 
-## **Is your enhancement request related to a problem? Please describe.**
-<!-- A clear and concise description of what the problem is. Ex. I'm always frustrated when [...] -->
+> ⚠️ **Before You Begin**  
+> - Search existing issues to avoid duplicates
+> - Check if this aligns with our [product roadmap](https://github.com/orgs/TuxTechLab/projects/1)
+> - Consider starting a discussion in our [Discussions](https://github.com/TuxTechLab/TuxTechLab/discussions) first
 
-*
+## 📋 Basic Information
 
----
+- **Component/Area**: [e.g., UI, API, Documentation, Performance]
+- **Priority**: [High/Medium/Low]
+- **Target Release**: [e.g., Next Release, Future Release, TBD]
+- **Related Issues/PRs**: #
 
-## **Describe the solution you'd like**
-<!-- A clear and concise description of what you want to happen. -->
+## 🎯 Problem Statement
+<!-- Clearly describe the problem or limitation you're trying to address -->
 
-*
+## 💡 Proposed Enhancement
+<!-- Describe your enhancement in detail -->
 
----
+### Expected Behavior
+<!-- What should happen after this enhancement is implemented? -->
 
-## **Describe alternatives you've considered**
-<!-- A clear and concise description of any alternative solutions or features you've considered. -->
+### Benefits
+<!-- How will this enhancement improve the project? -->
 
-*
+## 🔍 Alternative Solutions
+<!-- List any alternative solutions or features you've considered -->
+1. 
+2. 
 
----
+## 🖼️ Mockups/Examples
+<!-- 
+Add any mockups, diagrams, or examples that help illustrate your enhancement.
+To attach images:
+1. Drag and drop images here or
+2. Use this markdown:
+   ```markdown
+   ![Description](https://.../screenshot.png)
+   ```
+-->
 
-### **Additional context**
-<!-- Add any other context or additional information about the problem here.-->
+## 📊 Technical Considerations
+<!-- Any technical details, API changes, or architectural impacts -->
 
-*
+## 🧪 Testing Plan
+<!-- How should this enhancement be tested? -->
+- [ ] Test case 1
+- [ ] Test case 2
 
-<!--📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
+## 📚 Additional Context
+<!-- Any other context, links, or references -->
 
-Oh, hi there! 😄
+## ✅ Checklist
+- [ ] I've searched for similar enhancement requests
+- [ ] I've described the problem and proposed solution clearly
+- [ ] I've included relevant examples or mockups
+- [ ] I've considered alternative solutions
 
-To expedite issue processing, please search open and closed issues before submitting a new one.
-Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
+<!-- 
+📌 NOTE: 
+- For large enhancements, consider creating an RFC (Request for Comments) first
+- Include the [BREAKING] prefix in the title if this is a breaking change
+- @mention relevant team members or code owners
+-->
 
-📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛-->
+<!-- Auto-closing keywords (remove if not needed) -->
+/kind enhancement
+/priority needs-triage

@@ -1,29 +1,43 @@
-# **Name of PR**
+# 📌 Pull Request
 
-<!-- This PR fixes #NUMBER_OF_THE_ISSUE, and fixes #NUMBER_OF_THE_ISSUE -->
+## 🔗 Related Issues
+<!-- List any related issues here using the GitHub keyword format (e.g., 'Fixes #123') -->
+- Fixes #ISSUE_NUMBER
 
-## **Description**
+## 📝 Description
+<!-- Provide a clear and concise description of the changes in this PR -->
 
-<!--  📛📛
-Please include a summary of the change and/or which issue is fixed.
-List any dependencies required for this change, if there are any.
-📛📛 -->
+## 🧪 Testing
+- [ ] I have tested these changes locally
+- [ ] I have added/updated unit tests
+- [ ] I have updated documentation (if applicable)
 
-*
+### Test Environment
+- OS: [e.g., Windows 11, macOS 13, Ubuntu 22.04]
+- Browser (if applicable): [e.g., Chrome 115, Firefox 114]
+- Node.js version: [e.g., 18.16.0]
 
----
+## 📸 Screenshots / Screen Recordings
+<!-- Add screenshots or screen recordings to help explain your changes -->
 
-### **Additional context**
+## 🚀 Type of Change
+<!-- Check the relevant option -->
 
-<!-- Add any other context or additional information about the pull request.-->
+- [ ] 🐞 Bug fix (non-breaking change which fixes an issue)
+- [ ] ✨ New feature (non-breaking change which adds functionality)
+- [ ] ⚠️ Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] 📝 Documentation update
+- [ ] 🔧 Refactoring
+- [ ] 🧪 Test update
+- [ ] 🧹 Chore (updates to build process, dependencies, etc.)
 
-*
+## ✅ Checklist
+- [ ] My code follows the project's style guidelines
+- [ ] I have performed a self-review of my code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] Any dependent changes have been merged and published in downstream modules
 
-<!-- 📛📛📛📛
-If it fixes any current issue please let us know this way:
-Uncomment the comment above "description", then add your number of issues after the "#".
-Example: # **This pull request fixes #NUMBER_OF_THE_ISSUE issue**
-If there are multiple issues to be closed with the merge of this pull request
-please do it like so: **This pull request fixes #NUMBER_OF_THE_ISSUE, fixes #NUMBER_OF_THE_ISSUE and fixes #NUMBER_OF_THE_ISSUE issue**.
-For more information on closing issues using keywords, please check https://docs.github.com/en/enterprise/2.16/user/github/managing-your-work-on-github/closing-issues-using-keywords#closing-multiple-issues
-📛📛📛📛 -->
+## 🔍 Additional Context
+<!-- Add any other context about the PR here -->

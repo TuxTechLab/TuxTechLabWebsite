@@ -2,31 +2,31 @@ repository:
     # See https://developer.github.com/v3/repos/#edit for all available settings.
 
     # The name of the repository. Changing this will rename the repository
-    #name: repo-name
+    name: TuxTechLabWebsite
 
     # A short description of the repository that will show up on GitHub
-    #description: description of repo
+    description: TuxTechLab Website Repository
 
     # A URL with more information about the repository
     #homepage: https://example.github.io/
 
     # A comma-separated list of topics to set on the repository
-    #topics: project, template, project-template
+    topics: organization website
 
     # Either `true` to make the repository private, or `false` to make it public.
-    #private: false
+    private: false
 
     # Either `true` to enable issues for this repository, `false` to disable them.
-    #has_issues: true
+    has_issues: true
 
     # Either `true` to enable the wiki for this repository, `false` to disable it.
-    #has_wiki: true
+    has_wiki: true
 
     # Either `true` to enable downloads for this repository, `false` to disable them.
-    #has_downloads: true
+    has_downloads: true
 
     # Updates the default branch for this repository.
-    #default_branch: master
+    default_branch: master
 
     # Either `true` to allow squash-merging pull requests, or `false` to prevent
     # squash-merging.
@@ -38,7 +38,33 @@ repository:
 
     # Either `true` to allow rebase-merging pull requests, or `false` to prevent
     # rebase-merging.
-    #allow_rebase_merge: true
+    allow_rebase_merge: true
+
+# Branch Protection Rules
+branches:
+  - name: master
+    protection:
+      # Required. Require at least one approving review on a pull request before merging
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true
+      # Required. Require status checks to pass before merging
+      required_status_checks:
+        strict: true
+        contexts: []
+      # Required. Enforce all configured restrictions for administrators
+      enforce_admins: true
+      # Prevent merge commits from being pushed to matching branches
+      required_linear_history: true
+      # Required. Restrict who can push to this branch
+      restrictions:
+        users: []  # Add specific users who can push directly to master
+        teams: []  # Add teams who can push directly to master
+
+# Required reviewers for pull requests
+# This requires the 'code owners' feature to be enabled
+# Create a CODEOWNERS file in .github/ to specify code owners
 
 # Labels: define labels for Issues and Pull Requests
 labels:

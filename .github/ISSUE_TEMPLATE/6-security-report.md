@@ -54,47 +54,35 @@ The data that must NOT be posted here:
 
 ### **To Reproduce**
 
-<!-- Steps to reproduce the error:
-(e.g.:)
-1. Use x argument / navigate to
-2. Fill this information
-3. Go to...
-4. See error -->
+## 🛡️ Security Controls Bypassed
+<!-- What security controls were bypassed or what security mechanisms failed? -->
 
-<!-- Write the steps here (add or remove as many steps as needed)-->
+## 🔄 Reproduction Environment
+- **Application Version**: 
+- **Browser**: 
+- **OS**: 
+- **Additional Software**: 
 
-1.
-2.
-3.
-4.
+## 📸 Proof of Concept (PoC)
+<!-- 
+Please provide a proof of concept or steps to demonstrate the vulnerability. 
+You can use code blocks, screenshots, or detailed descriptions.
+-->
 
----
-
-### **Expected behaviour**
+## ✅ Expected Behavior
 <!-- A clear and concise description of what you expected to happen. -->
 
-*
+## 📝 Additional Context
+<!-- Add any other context about the vulnerability here. -->
+
+## 🔒 Responsible Disclosure
+- [ ] I agree to follow responsible disclosure practices and allow reasonable time for the issue to be fixed before public disclosure.
+
+## 📧 Contact Information
+<!-- Optional: Provide your contact information if you'd like to be updated about the issue. -->
+- Email: 
+- PGP Key: 
 
 ---
 
-### **Media prove**
-<!-- If applicable, add screenshots or videos to help explain your problem. -->
-
----
-
-### **Your environment**
-
-<!-- use all the applicable bulleted list elements for this specific issue,
-and remove all the bulleted list elements that are not relevant for this issue. -->
-
-* OS: <!--[e.g. Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...]-->
-* Node version:
-* Npm version:
-* Browser name and version:
-
----
-
-### **Additional context**
-<!-- Add any other context or additional information about the problem here.-->
-
-*
+> **Note**: For sensitive security issues, please consider emailing security@tuxtechlab.com instead of filing a public issue.

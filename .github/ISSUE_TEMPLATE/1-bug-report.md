@@ -3,51 +3,47 @@ name: "🐞 Bug Report"
 about: "Report an issue to help the project improve."
 title: "[Bug] "
 labels: "Type: Bug"
-assignees: Tux
-
+assignees: 
+  - Tux
 ---
 
-# **🐞 Bug Report**
+# 🐞 Bug Report
 
-## **Describe the bug**
+## 📋 Description
 <!-- A clear and concise description of what the bug is. -->
 
-*
+## 🔍 Steps to Reproduce
+<!-- 
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error 
+-->
+1. 
+2. 
+3. 
+4. 
 
----
-
-### **Is this a regression?**
-<!-- Did this behaviour used to work in the previous version? -->
-<!-- Yes, the last version in which this bug was not present was: ... -->
-
----
-
-### **To Reproduce**
-
-<!-- Steps to reproduce the error:
-(e.g.:)
-1. Use x argument / navigate to
-2. Fill this information
-3. Go to...
-4. See error -->
-
-<!-- Write the steps here (add or remove as many steps as needed)-->
-
-1.
-2.
-3.
-4.
-
----
-
-### **Expected behaviour**
+## 🎯 Expected Behavior
 <!-- A clear and concise description of what you expected to happen. -->
 
-*
+## 📸 Screenshots / Screen Recordings
+<!-- If applicable, add screenshots or screen recordings to help explain your problem. -->
 
----
+## 🌍 Environment
+**Device:** <!-- e.g., Desktop, Laptop, Mobile -->
+**OS:** <!-- e.g., Windows 11, macOS 13, Ubuntu 22.04 -->
+**Browser:** <!-- e.g., Chrome 115, Firefox 114, Safari 16 -->
+**Version:** <!-- e.g., 1.0.0 -->
 
-### **Media prove**
+## 🔄 Is this a regression?
+<!-- Did this work in previous versions? -->
+- [ ] Yes, it worked in version: `...`
+- [ ] No, it never worked
+- [ ] I don't know
+
+## 📝 Additional Context
+<!-- Add any other context about the problem here. -->
 <!-- If applicable, add screenshots or videos to help explain your problem. -->
 
 ---

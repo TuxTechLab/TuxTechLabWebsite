@@ -13,7 +13,7 @@
 # GITHUB:        https://github.com/TuxTechLab/
 # REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
 # ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
-# MAIL:          root.tuxtechlab@gmail.com
+# MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 # SCRIPT WITH EXPORTED FUNCTIONS AND VARIABLES USED IN THE MAIN SETUP_TEMPLATE
@@ -64,7 +64,7 @@ displayHelpTexts() { # (it will manually detect your git data and prompt for the
   echo -e "  bash $0"
   echo -e "  bash $0 -h"
   echo -e "  bash $0 --projectType=Angular-Website --omit-commit --omit-verification"
-  echo -e "  bash $0 --email=root.tuxtechlab@gmail.com"
+  echo -e "  bash $0 --email=admin@tuxtechlab.com"
   echo -e "  bash $0 --username=whatever --projectName=whatever --email=whatever --projectType=whatever${NC}"
   echo -e "  bash $0 -u=TuxTechLab --projectType=Github-template --omit-commit${NC}\n"
 

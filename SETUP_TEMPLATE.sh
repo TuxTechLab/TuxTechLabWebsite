@@ -19,7 +19,7 @@
 # GITHUB:        https://github.com/TuxTechLab/
 # REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
 # ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
-# MAIL:          root.tuxtechlab@gmail.com
+# MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 RED='\033[1;31m'                                     # color red
@@ -209,7 +209,7 @@ y | Y)
 
   # replace the username and email
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/TuxTechLab/${NEW_USERNAME}/g"
-  find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/root.tuxtechlab@gmail.com/${NEW_EMAIL}/g"
+  find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/admin@tuxtechlab.com/${NEW_EMAIL}/g"
   find .github/ -type f -name "*" -print0 | xargs -0 sed -i "s/project-template/${PROJECT_NAME}/g"
   find .gitignore -type f -name "*" -print0 | xargs -0 sed -i "s/TuxTechLab\/project-template/${NEW_USERNAME}\/${PROJECT_NAME}/g"
 

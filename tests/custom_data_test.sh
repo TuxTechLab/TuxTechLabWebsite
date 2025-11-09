@@ -12,7 +12,7 @@
 # GITHUB:        https://github.com/TuxTechLab/
 # REPOSITORY:    https://github.com/TuxTechLab/TuxTechLab-Template-Repo
 # ISSUES:        https://github.com/TuxTechLab/TuxTechLab-Template-Repo/issues
-# MAIL:          root.tuxtechlab@gmail.com
+# MAIL:          admin@tuxtechlab.com
 #~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#
 
 TESTS_TRASH_DIR="tests/.ignore.tests_trash"
